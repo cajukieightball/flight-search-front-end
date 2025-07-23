@@ -36,7 +36,7 @@ export default function Results() {
   //     </h2>
   //     <FlightList flights={flights} />
   //   </div>
-  // );
+  // ) ;
 
 
   //REst-api
@@ -46,7 +46,7 @@ export default function Results() {
   useEffect(() => {
     setIsLoading(true);
 
-    fetch(`${api}/flights?from=${from}&to=${to}`)
+   fetch(`${api}/api/flights?from=${from}&to=${to}`)
       // .then((res) => res.json())
       .then((res) => {
         if (!res.ok) {
