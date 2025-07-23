@@ -1,9 +1,12 @@
+// 
+
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const api = import.meta.env.VITE_API_URL;
 
-function Login({ onAuth, setMessage }) {
+export default function Login({ onAuth, setMessage }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -47,5 +50,3 @@ function Login({ onAuth, setMessage }) {
     </form>
   );
 }
-
-export default Login;
